@@ -1,0 +1,37 @@
+[project]
+name = "ctci-workspace"
+version = "0.1.0"
+description = "Opinionated practice workspace for Cracking the Coding Interview"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2",
+    "ruff>=0.4",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = [
+    "--strict-markers",
+    "--strict-config",
+]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "B", "UP", "N", "A", "PL"]
+ignore = ["PLR2004", "PLR0913", "PLR0917"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
+
+[tool.ruff.lint.isort]
+known-first-party = ["ctci"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

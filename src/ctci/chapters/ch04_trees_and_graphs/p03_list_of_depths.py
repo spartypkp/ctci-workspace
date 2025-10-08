@@ -1,0 +1,21 @@
+"""
+Cracking the Coding Interview - Ch04 Trees And Graphs
+
+Problem 04.03: List of Depths
+Summary: Create linked lists of all nodes at each depth of a binary tree.
+Tags: tree, bfs
+"""
+from ctci.catalog import get_problem
+
+
+PROBLEM = get_problem("ch04_trees_and_graphs", 3)
+
+
+# Feel free to delete this function once you start exploring your own API.
+
+def solve(*args, **kwargs):
+    """Entry point for quick experimentation.
+
+    Replace or extend this helper as you see fit when implementing the solution.
+    """
+    raise NotImplementedError(PROBLEM.title)
