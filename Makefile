@@ -4,7 +4,7 @@ help:
 @grep -E '^[a-zA-Z_-]+:' Makefile | sed 's/:.*//' | sort
 
 install:
-python -m venv .venv
+python3 -m venv .venv
 . .venv/bin/activate && pip install --upgrade pip
 . .venv/bin/activate && pip install -e .[dev]
 
